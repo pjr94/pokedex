@@ -1,0 +1,45 @@
+hmtl{
+    background-color: lavender;
+}
+
+.search-section{
+    background-color: azure;
+    height: 300px;
+    padding-top: 10px;
+}
+
+.card-section{
+    width: 100%;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+
+.flex{
+    display: flex;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.justify-space-around{
+    justify-content: space-around;
+}
+
+.justify-space-betwee{
+    justify-content: space-between;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.margin50{
+    margin: 50px;
+}
+
+.width{
+    width: 100px;
+}
