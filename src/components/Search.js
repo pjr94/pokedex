@@ -1,26 +1,26 @@
-import React from "react"
+import React from "react";
 
 export default function Search(props) {
-  //
-  const [search, setSearch] = React.useState("");;
+  const [search, setSearch] = React.useState("");
 
   const handleChange = e => {
     setSearch(e.target.value.toLowerCase());
   };
 
-  const send = (e) => {
-    e.preventDefault()
-    if (search){
-      props.handleSubmit(search)
-    } };
-  /*
-
-
-  */
+  const send = e => {
+    // PreventDefault to stop page refresh on form submit
+    e.preventDefault();
+    // if search is not an empty string
+    if (search) {
+      props.handleSubmit(search);
+    }
+  };
 
   return (
     <div>
-      
+      {props.unrecognised === true ? (
+        <p>This pokemon is not recognised </p>
+      ) : null}
       <form onSubmit={send}>
         <label>
           <input
@@ -34,5 +34,5 @@ export default function Search(props) {
         </label>
       </form>
     </div>
-  )
+  );
 }
