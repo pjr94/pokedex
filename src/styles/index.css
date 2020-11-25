@@ -6,15 +6,63 @@ hmtl{
     background-color: azure;
     height: 300px;
     padding-top: 10px;
+    position: sticky;
+    top: 0;
+    padding-left: 20%;
 }
 
 .card-section{
+    display:block;
     width: 100%;
     font-size: 1em;
     font-weight: bold;
+
+    padding-left: 0.5%;
+
 }
 
+.poke-info{
 
+ }
+ 
+ .searched-headers{
+     padding-right: 5px;
+ }
+ 
+ .search{
+     width: 300px;
+     padding-top: 40px;
+     padding-left: 10px;
+     padding-right: 20%;
+ }
+ 
+.main-sprite{
+    text-align: center;
+}
+
+ .main-sprite img{
+    display:block; 
+    margin-left: 70%;
+    
+    
+ }
+ 
+
+.poke-card{
+ cursor: pointer;
+}
+
+.not-recognised{
+    height: 20px;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
 
 .flex{
     display: flex;

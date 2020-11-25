@@ -9,7 +9,7 @@ export default function Card(props) {
   };
 
   return (
-    <div className="width">
+    <div className="width poke-card">
       <div
         className={props.pokemonData.types[0].type.name}
         onClick={() => updateSearch()}

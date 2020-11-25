@@ -11,15 +11,26 @@ div {
 
   }
 
+h1{
+  font-size: 1.4em;
+}
+
+h2{
+  font-size: 1.1em;
+}
 
 .pokemon-logo{
   width: 200px;
   display: block;
   margin: auto;
-  padding: 50px 50px;
+  padding: 18px 0;
 
 }
 
 .sprite{
   align-self: center;
 }
+
+.table { display: table; }
+.row { display: table-row; }
+.cell { display: table-cell; }

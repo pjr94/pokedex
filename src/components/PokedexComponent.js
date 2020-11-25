@@ -10,7 +10,7 @@ export default function PokedexComponent(props) {
 
   let tempPokemonArray = [];
   // number of pokemon to render
-  let num = 15;
+  let num = 152;
 
   const fetchAllPokemon = async () => {
     for (var i = 1; i < num; i++) {
@@ -44,7 +44,7 @@ export default function PokedexComponent(props) {
         <p>Loading pokemon...</p>
       ) : (
         allPokemon.map((data, i) => (
-          <Card
+          <Card     
             getPokeCache={props.getPokeCache}
             handleSubmit={props.handleSubmit}
             setSearchedPokemon={props.setSearchedPokemon}
