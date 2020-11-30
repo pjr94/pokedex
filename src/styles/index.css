@@ -1,93 +1,129 @@
-hmtl{
-    background-color: lavender;
+hmtl {
+  background-color: lavender;
 }
 
-.search-section{
-    background-color: azure;
-    height: 300px;
-    padding-top: 10px;
-    position: sticky;
-    top: 0;
-    padding-left: 20%;
+.search-section {
+  background-color: azure;
+  min-height: 300px;
+  /* top right bottom left */
+  padding: 20px 0 20px 00px;
+
+  position: sticky;
+  top: 0;
+  flex-wrap: wrap;
 }
 
-.card-section{
-    display:block;
-    width: 100%;
-    font-size: 1em;
-    font-weight: bold;
-
-    padding-left: 0.5%;
-
+.poke-info {
+  width: 300px;
+  padding: 10px;
 }
 
-.poke-info{
-
- }
- 
- .searched-headers{
-     padding-right: 5px;
- }
- 
- .search{
-     width: 300px;
-     padding-top: 40px;
-     padding-left: 10px;
-     padding-right: 20%;
- }
- 
-.main-sprite{
-    text-align: center;
+.search {
+  width: 300px;
+  padding: 10px;
 }
 
- .main-sprite img{
-    display:block; 
-    margin-left: 70%;
-    
-    
- }
- 
 
-.poke-card{
- cursor: pointer;
+@media screen and (max-width: 1000px) {
+    .search-section{
+        position: static;
+    }
+  }
+
+
+.card-section {
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  font-weight: bold;
+
+  padding-left: 0.5%;
 }
 
-.not-recognised{
-    height: 20px;
+.searched-headers {
+  padding-right: 5px;
 }
 
-.text-left{
-    text-align: left;
+.main-sprite {
+  text-align: center;
 }
 
-.text-right{
-    text-align: right;
+.main-sprite img {
+  display: block;
+  margin-left: 70%;
 }
 
-.flex{
-    display: flex;
+.search-input {
+  height: 24px;
 }
 
-.flex-wrap{
-    flex-wrap: wrap;
+/* Button code generated from https://www.bestcssbuttongenerator.com/#/3 */
+.search-button {
+  box-shadow: inset 0px 1px 3px 0px #007ce2;
+  background: linear-gradient(to bottom, #1589e7 5%, #007ce2 100%);
+  background-color: #768d87;
+  border-radius: 5px;
+  border: 1px solid #566963;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  padding: 4px 7px;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px #2b665e;
+
+  margin-left: 5px;
+}
+.search-button:hover {
+  background: linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+  background-color: #6c7c7c;
+}
+.search-button:active {
+  position: relative;
+  top: 1px;
 }
 
-.justify-space-around{
-    justify-content: space-around;
+.poke-card {
+  cursor: pointer;
 }
 
-.justify-space-betwee{
-    justify-content: space-between;
+.not-recognised {
+  height: 20px;
 }
 
-.justify-center{
-    justify-content: center;
+.text-left {
+  text-align: left;
 }
 
-.margin50{
-    margin: 50px;
+.text-right {
+  text-align: right;
 }
 
-.width{
-    width: 100px;
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.margin50 {
+  margin: 50px;
+}
+
+.width {
+  width: 100px;
 }

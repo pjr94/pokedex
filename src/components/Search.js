@@ -26,13 +26,14 @@ export default function Search(props) {
       <form onSubmit={send}>
         <label>
           <input
+            className="search-input"
             type="text"
             onChange={handleChange}
             placeholder="Search Pokemon"
             onClick={() => setSearch("")}
             value={search}
           />
-          <button type="submit">Search</button>
+          <button className="search-button" type="submit">Search</button>
         </label>
       </form>
       <div className="not-recognised">

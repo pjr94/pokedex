@@ -8,7 +8,7 @@ import "../styles/index.css";
 
 export default function SearchComponent(props) {
   return (
-    <div className="flex justify-space-around search-section">
+    <div className="flex justify-center search-section">
       <div className="poke-info">
         <SearchedCard pokemonData={props.pokemonData} />
       </div>
