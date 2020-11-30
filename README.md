@@ -1,5 +1,10 @@
-
 ## 1st Gen Pokedex
+
+  Live site: https://friendly-heyrovsky-a3c6e0.netlify.app/
+
+  **Stack**
+    React
+    Gatsby
 
   **PokeAPI**
     Makes use of the PokeAPI JS wrapper for caching purposes
