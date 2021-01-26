@@ -1,4 +1,3 @@
-import React from "react";
 import allTypes from "../data/AllTypes.json"; // file from https://github.com/Naramsim/Colosseum/blob/master/src/data/all_types.json
 
 export default function getMultipliers(types) {

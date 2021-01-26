@@ -14,13 +14,21 @@ hmtl {
 }
 
 .poke-info {
-  width: 400px;
+  width: 500px;
   padding: 10px;
 }
 
 .search {
   width: 400px;
   padding: 10px;
+}
+
+.history-item{
+  padding-bottom: 5px;
+}
+
+.pokecard-name{
+  padding-left: 1px;
 }
 
 
@@ -45,7 +53,9 @@ hmtl {
 }
 
 .searched-headers {
-  padding-right: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+
 }
 
 .main-sprite {
@@ -58,7 +68,8 @@ hmtl {
 }
 
 .search-input {
-  height: 24px;
+  height: 30px;
+  width: 200px;
 }
 
 /* Button code generated from https://www.bestcssbuttongenerator.com/#/3 */
@@ -76,7 +87,9 @@ hmtl {
   padding: 4px 7px;
   text-decoration: none;
   text-shadow: 0px -1px 0px #2b665e;
-
+  
+  height: 30px;
+  width: 100px;
   margin-left: 5px;
 }
 .search-button:hover {
@@ -86,6 +99,10 @@ hmtl {
 .search-button:active {
   position: relative;
   top: 1px;
+}
+
+.tooltip{
+  padding: 3px;
 }
 
 .poke-card {

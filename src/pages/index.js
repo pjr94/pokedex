@@ -34,18 +34,6 @@ export default function Home() {
     }
   };
 
-  // useEffect to make sure component reupdates on searchedPokemon change
-  const updateSearch = useEffect(() => {
-    // If its not a duplicate search
-    // In this method so that it runs each time searchedPokemon changes
-    if (searchedPokemon !== tempHistory[tempHistory.length - 1]) {
-      tempHistory.push(searchedPokemon);
-      setHistory(tempHistory);
-      console.log(history);
-    }
-    getPokeCache();
-  }, [searchedPokemon]);
-
   const handleSubmit = search => {
     setSearchedPokemon(search);
   };

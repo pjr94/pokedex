@@ -1,6 +1,4 @@
 import React, { useEffect } from "react";
-import axios from "axios";
-
 import Card from "../components/Card.js";
 import "../styles/index.css";
 
@@ -39,7 +37,9 @@ export default function PokedexComponent(props) {
   }, []);
 
   return (
-    <div className="flex card-section flex-wrap">
+    <div>
+      <p className="text-right tooltip">You can click on the pokemon below for their information...</p> 
+      <div className="flex card-section flex-wrap">
       {loading ? (
         <p>Loading pokemon...</p>
       ) : (
@@ -54,5 +54,7 @@ export default function PokedexComponent(props) {
         ))
       )}
     </div>
+    </div>
+    
   );
 }

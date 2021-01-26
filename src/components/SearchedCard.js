@@ -1,8 +1,6 @@
 import React from "react";
 import getMultipliers from "../services/getMultipliers";
 import uppercaseFirstLetter from "../services/uppercaseFirstLetter";
-import allTypes from "../data/AllTypes.json";
-import ifExists from "../services/ifExists";
 
 export default function SearchedCard(props) {
   let types = props.pokemonData.types;

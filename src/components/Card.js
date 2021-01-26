@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/pokecard-types.css";
 import uppercaseFirstLetter from "../services/uppercaseFirstLetter";
+import "../styles/index.css"
 
 export default function Card(props) {
   const updateSearch = () => {
@@ -16,10 +17,11 @@ export default function Card(props) {
       >
         <p>{props.pokemonData.id}</p>
         <img
+          alt={`${props.pokemonData.name} sprite`}
           className="sprite"
           src={props.pokemonData.sprites["front_default"]}
         />
-        {uppercaseFirstLetter(props.pokemonData.name)}
+        <p className="pokecard-name">{uppercaseFirstLetter(props.pokemonData.name)}</p>
       </div>
     </div>
   );
