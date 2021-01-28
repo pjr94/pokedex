@@ -38,7 +38,7 @@ export default function PokedexComponent(props) {
 
   return (
     <div>
-      <p className="text-right tooltip">You can click on the pokemon below for their information...</p> 
+      <p className="text-right tooltip">You can click on the pokemon below for their information... (Scroll down for more pokemon)</p> 
       <div className="flex card-section flex-wrap">
       {loading ? (
         <p>Loading pokemon...</p>
